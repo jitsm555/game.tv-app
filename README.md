@@ -14,9 +14,10 @@ This is the simple game.tv app which list down the tournament details and user i
 
 
 ### ScreenShot
-
-![](images/login_screen.png)!
-![](images/home_screen.png)!
+<p float="left">
+  <img src=images/login_screen.png height=417 width=237 />
+  <img src=images/home_screen.png height=417 width=237 />
+</p>
 
 ### Supported devices
 
