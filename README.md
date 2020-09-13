@@ -1,16 +1,40 @@
-# game_tv_app
+# Game.tv App
+This is the simple game.tv app which list down the tournament details and user info.
 
-A new Flutter application.
+# Architecture 
 
-## Getting Started
+![](images/architecture.png)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+#### dependencies
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [http](https://pub.dev/packages/http) : Network Calls
+- [provider](https://pub.dev/packages/provider)：State management
+- [shared_preferences](https://pub.dev/packages/shared_preferences): Shared Preferences
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### ScreenShot
+
+![](images/login_screen.png)!
+![](images/home_screen.png)!
+
+### Supported devices
+
+sdk: ">=2.7.0 <3.0.0"
+
+### Supported features
+- Login Screen
+- User Details
+- Tournaments 
+
+### Requirements to build the app
+**1. Login screen:**
+  
+    i. An image of game.tv logo
+    ii. Username text field: It should have validation of min 3 characters and max 10 with proper error message if the validation fails.
+    iii. Password field: It should have validation of min 3 characters and max 10 with proper error message if the validation fails.
+    iv. Submit button: It should be disabled if either validation fails.
+    
+      
+**2. Home screen:**
+This will hold some information related to the logged in user, along with a few tournament cards.    
