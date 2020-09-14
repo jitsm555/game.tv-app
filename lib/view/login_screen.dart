@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_tv_app/utils/localization/application_localizations.dart';
 import 'package:game_tv_app/view/home_screen.dart';
 import 'package:game_tv_app/view_model/login_view_model.dart';
 import 'package:provider/provider.dart';
@@ -73,13 +74,14 @@ class _LoginScreenState extends State<LoginScreen> {
         },
         validator: (value) {
           if (value.length != 10) {
-            return Constants.PHONE_NO_WARNING;
+            return ApplicationLocalizations.of(context)
+                .translate('phone_no_warning');
           }
           return null;
         },
         cursorColor: Colors.white,
         decoration: InputDecoration(
-          labelText: Constants.PHONE_NO,
+          labelText: ApplicationLocalizations.of(context).translate('phone_no'),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(32)),
           labelStyle: TextStyle(color: Colors.white),
           enabledBorder: OutlineInputBorder(
@@ -108,13 +110,14 @@ class _LoginScreenState extends State<LoginScreen> {
         },
         validator: (value) {
           if (value.length < 3 || value.length > 10) {
-            return Constants.PASSWORD_WARNING;
+            return ApplicationLocalizations.of(context)
+                .translate('password_warning');
           }
           return null;
         },
         cursorColor: Colors.white,
         decoration: InputDecoration(
-          labelText: Constants.PASSWORD,
+          labelText: ApplicationLocalizations.of(context).translate('password'),
           helperText: "",
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(32)),
           labelStyle: TextStyle(color: Colors.white),
@@ -148,10 +151,11 @@ class _LoginScreenState extends State<LoginScreen> {
               if (isLoggedIn) {
                 Navigator.of(context).pushNamed(HomeScreen.home_screen_route);
               } else
-                _showSnackBar(Constants.INCORRECT_CREDENTIAL);
+                _showSnackBar(ApplicationLocalizations.of(context)
+                    .translate('invalid_credentials'));
             }
           },
-          child: Text(Constants.LOGIN)),
+          child: Text(ApplicationLocalizations.of(context).translate('login'))),
     );
   }
 

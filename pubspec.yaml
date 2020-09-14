@@ -37,6 +37,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -83,3 +85,5 @@ flutter:
     - assets/background_image.png
     - assets/tournament_placeholder.png
     - assets/game_tv_logo.png
+    - resources/language/ja.json
+    - resources/language/en.json

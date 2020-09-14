@@ -3,6 +3,7 @@ import 'package:game_tv_app/model/apis/api_response.dart';
 import 'package:game_tv_app/model/tournaments_response.dart';
 import 'package:game_tv_app/model/user_details_response.dart';
 import 'package:game_tv_app/utils/constants.dart';
+import 'package:game_tv_app/utils/localization/application_localizations.dart';
 import 'package:game_tv_app/view/login_screen.dart';
 import 'package:game_tv_app/view_model/home_view_model.dart';
 import 'package:provider/provider.dart';
@@ -35,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: ListView(
           children: [
             ListTile(
-              title: Text(Constants.LOG_OUT),
+              title: Text(ApplicationLocalizations.of(context).translate('log_out')),
               onTap: () {
                 Provider.of<HomeViewModel>(context).loggedOut();
                 Navigator.pushNamedAndRemoveUntil(
@@ -57,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           elevation: 0,
           title: Text(
-            Constants.TITLE,
+            ApplicationLocalizations.of(context).translate('title'),
             style: TextStyle(color: Colors.black),
           ),
           iconTheme: _customIconTheme(),
@@ -141,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     Padding(
                                       padding: EdgeInsets.fromLTRB(8, 8, 16, 8),
                                       child: Text(
-                                        Constants.RATING_DESC,
+                                        ApplicationLocalizations.of(context).translate('elo_rating'),
                                         style: TextStyle(
                                             fontSize: 11,
                                             fontWeight: FontWeight.w500,
@@ -180,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     style: tournamentNumberTextStyle,
                                   ),
                                   Text(
-                                    Constants.TOURNAMENT_PLAYED,
+                                    ApplicationLocalizations.of(context).translate('tournament_played'),
                                     textAlign: TextAlign.center,
                                     style: tournamentDetailsTextStyle,
                                   )
@@ -206,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     style: tournamentNumberTextStyle,
                                   ),
                                   Text(
-                                    Constants.TOURNAMENT_WON,
+                                    ApplicationLocalizations.of(context).translate('tournament_won'),
                                     textAlign: TextAlign.center,
                                     style: tournamentDetailsTextStyle,
                                   )
@@ -234,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     style: tournamentNumberTextStyle,
                                   ),
                                   Text(
-                                    Constants.WINING_PERCENTAGE,
+                                    ApplicationLocalizations.of(context).translate('win_percentage'),
                                     textAlign: TextAlign.center,
                                     style: tournamentDetailsTextStyle,
                                   )
@@ -251,7 +252,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Padding(
                             padding: EdgeInsets.fromLTRB(16, 8, 16, 8),
                             child: Text(
-                              Constants.RECOMMENDATION,
+                              ApplicationLocalizations.of(context).translate('recommended_for_you'),
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,

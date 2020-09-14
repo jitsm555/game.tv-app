@@ -1,0 +1,18 @@
+{
+  "title": "Flyingwolf",
+  "password_warning": "Password can have 3 to 10 characters",
+  "phone_no_warning": "Phone Number must be 10 characters",
+  "password": "Password",
+  "phone_no": "Phone No",
+  "invalid_credentials": "Invalid Credentials!",
+  "login": "Login",
+  "log_out": "Log Out",
+  "elo_rating": "Elo Rating",
+  "tournament_played": "Tournaments played",
+  "tournament_won": "Tournaments won",
+  "win_percentage": "Winning percentage",
+  "recommended_for_you": "Recommended for you",
+  "ok": "OK",
+  "cancel": "Cancel",
+  "log_out_msg": "Are you sure you want to log out?"
+}

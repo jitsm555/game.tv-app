@@ -1,0 +1,18 @@
+{
+  "title": "フライングウルフ",
+  "password_warning": "パスワードには3〜10文字を使用できます",
+  "phone_no_warning": "電話番号は10文字でなければなりません",
+  "password": "パスワード",
+  "phone_no": "電話番号",
+  "invalid_credentials": "無効な資格情報！",
+  "login": "ログインする",
+  "log_out": "ログアウト",
+  "elo_rating": "エロ評価",
+  "tournament_played": "プレーしたトーナメント",
+  "tournament_won": "勝ったトーナメント",
+  "win_percentage": "勝率",
+  "recommended_for_you": "あなたにおすすめ",
+  "ok": "OK",
+  "cancel": "キャンセル",
+  "log_out_msg": "ログアウトしてもよろしいですか？"
+}
